@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.catapush.test</groupId>
+    <artifactId>tigase-scram-test</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>Tigase SCRAM test</name>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
+        <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+        <rocks.xmpp.version>0.7.2</rocks.xmpp.version>
+        <org.igniterealtime.smack.version>4.1.8</org.igniterealtime.smack.version>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>rocks.xmpp</groupId>
+            <artifactId>xmpp-core</artifactId>
+            <version>${rocks.xmpp.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>rocks.xmpp</groupId>
+            <artifactId>xmpp-core-client</artifactId>
+            <version>${rocks.xmpp.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>rocks.xmpp</groupId>
+            <artifactId>xmpp-extensions-client</artifactId>
+            <version>${rocks.xmpp.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-java7</artifactId>
+            <version>${org.igniterealtime.smack.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-tcp</artifactId>
+            <version>${org.igniterealtime.smack.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-extensions</artifactId>
+            <version>${org.igniterealtime.smack.version}</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.19.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>    
+    </build>
+</project>

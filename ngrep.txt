@@ -1,0 +1,181 @@
+####
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <?xml version="1.0" encoding="UTF-8"?><stream:stream xml:lang="en-US" to="redacted.vhost" version="1.0" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' from='redacted.vhost' id='197ed258-d4ca-4e75-a575-6014740f7239' version='1.0' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <stream:features><sm xmlns="urn:xmpp:sm:3"/><auth xmlns="http://jabber.org/features/iq-auth"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>SCRAM-SHA-1</mechanism><mechanism>PLAIN</mechanism></mechanisms><ver xmln
+  s="urn:xmpp:features:rosterver"/><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression></stream:features>
+##
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AGplbmtpbnMAdGVzdA==</auth>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+##
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <?xml version="1.0" encoding="UTF-8"?><stream:stream xml:lang="en-US" to="redacted.vhost" version="1.0" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' from='redacted.vhost' id='197ed258-d4ca-4e75-a575-6014740f7239' version='1.0' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <stream:features><sm xmlns="urn:xmpp:sm:3"/><csi xmlns="urn:xmpp:csi:0"/><ver xmlns="urn:xmpp:features:rosterver"/><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><compression xmlns="http://jabber.org/features/compress"><method>
+  zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+##
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <iq id="c75fcee3-c270-4a03-9eb1-42fdde7ce8e6" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>mobile</resource></bind></iq>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <iq xmlns="jabber:client" to="user@redacted.vhost/mobile" type="result" id="c75fcee3-c270-4a03-9eb1-42fdde7ce8e6"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>user@redacted.vhost/mobile</j
+  id></bind></iq>
+#
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+
+##
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <iq id="06d0c09f-d099-46e6-bdee-29cc7d62ff90" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"></session></iq> <enable xmlns="urn:xmpp:sm:3" resume="true"></enable>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <enabled xmlns='urn:xmpp:sm:3' id='ddebadd3-2a1c-455d-b977-8fb74a4f1c77' resume='true' max='60' location='java-devel' />
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <iq xmlns="jabber:client" to="user@redacted.vhost/mobile" type="result" id="06d0c09f-d099-46e6-bdee-29cc7d62ff90"/>
+##
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <iq id="1956c552-aad4-4bf0-bf8a-eb1c3fe956c5" type="get"><query xmlns="jabber:iq:roster" ver="03f298dd5780e6d503733b3308b72e81"></query></iq>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <iq xmlns="jabber:client" to="user@redacted.vhost/mobile" type="result" id="1956c552-aad4-4bf0-bf8a-eb1c3fe956c5"/>
+#
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+
+##
+T 10.122.122.1:51410 -> 10.122.122.10:5222 [AP]
+  <presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="http://xmpp.rocks" ver="byscAnvSKLL8y3tv6dT8HA6NnRU="></c></presence> <presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="http://xmpp.rocks
+  " ver="byscAnvSKLL8y3tv6dT8HA6NnRU="></c><delay xmlns="urn:xmpp:delay" stamp="2016-10-18T10:17:46.504Z"></delay><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="http://xmpp.rocks" ver="byscAnvSKLL8y3tv6dT8HA6NnRU="></c
+  ></presence>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <presence xmlns="jabber:client" from="user@redacted.vhost/mobile" to="user@redacted.vhost"><c hash="sha-1" xmlns="http://jabber.org/protocol/caps" ver="byscAnvSKLL8y3tv6dT8HA6NnRU=" node="http://
+  xmpp.rocks"/></presence>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51410 [AP]
+  <presence xmlns="jabber:client" from="user@redacted.vhost/mobile" to="user@redacted.vhost"><c hash="sha-1" xmlns="http://jabber.org/protocol/caps" ver="byscAnvSKLL8y3tv6dT8HA6NnRU=" node="http://
+  xmpp.rocks"/><delay xmlns="urn:xmpp:delay" stamp="2016-10-18T10:17:46.504Z"/><c hash="sha-1" xmlns="http://jabber.org/protocol/caps" ver="byscAnvSKLL8y3tv6dT8HA6NnRU=" node="http://xmpp.rocks"/></presence>
+########
+T 10.122.122.1:51411 -> 10.122.122.10:5222 [AP]
+  <?xml version="1.0" encoding="UTF-8"?><stream:stream xml:lang="en-US" to="redacted.vhost" version="1.0" xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams">
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51411 [AP]
+  <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' from='redacted.vhost' id='c83ce3b6-ec54-4456-8e11-75d7f29efcc8' version='1.0' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51411 [AP]
+  <stream:features><sm xmlns="urn:xmpp:sm:3"/><auth xmlns="http://jabber.org/features/iq-auth"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>SCRAM-SHA-1</mechanism><mechanism>PLAIN</mechanism></mechanisms><ver xmln
+  s="urn:xmpp:features:rosterver"/><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression></stream:features>
+##
+T 10.122.122.1:51411 -> 10.122.122.10:5222 [AP]
+  <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="SCRAM-SHA-1">biwsbj1qZW5raW5zLHI9aVRCd3cvWkt6S2FBVUFDMGUwVmVyQT09</auth>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51411 [AP]
+  <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cj1pVEJ3dy9aS3pLYUFVQUMwZTBWZXJBPT1iVURQZGY3WEpBN1lFaDFGc0hDMCxzPUJmaks5T0Q4d2lEeXRnPT0saT00MDk2</challenge>
+##
+T 10.122.122.1:51411 -> 10.122.122.10:5222 [AP]
+  <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Yz1iaXdzLHI9aVRCd3cvWkt6S2FBVUFDMGUwVmVyQT09YlVEUGRmN1hKQTdZRWgxRnNIQzAscD1DUHpFZEExUFpWTXBHVzRXdWZyRUFNOWFGbTA9</response>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51411 [AP]
+  <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/><text xml:lang='en'>Password not verified</text></failure>
+##
+T 10.122.122.1:51411 -> 10.122.122.10:5222 [AP]
+  </stream:stream>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51411 [AP]
+  </stream:stream>
+#########
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <stream:stream xmlns='jabber:client' to='redacted.vhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' from='user@redacted.vhost' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' from='redacted.vhost' id='666b091e-04af-481f-a5e2-938aca6e3aab' version='1.0' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <stream:features><sm xmlns="urn:xmpp:sm:3"/><auth xmlns="http://jabber.org/features/iq-auth"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>SCRAM-SHA-1</mechanism><mechanism>PLAIN</mechanism></mechanisms><ver xmln
+  s="urn:xmpp:features:rosterver"/><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression></stream:features>
+##
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mechanism='PLAIN'>AGplbmtpbnMAdGVzdA==</auth>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+##
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <stream:stream xmlns='jabber:client' to='redacted.vhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' from='user@redacted.vhost' id='666b091e-04af-481f-a5e2-938aca6e3aab' xml:lang='
+  en'>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' from='redacted.vhost' id='666b091e-04af-481f-a5e2-938aca6e3aab' version='1.0' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <stream:features><sm xmlns="urn:xmpp:sm:3"/><csi xmlns="urn:xmpp:csi:0"/><ver xmlns="urn:xmpp:features:rosterver"/><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><compression xmlns="http://jabber.org/features/compress"><method>
+  zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+##
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <iq id='dKawV-3' type='set'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><resource>mobile</resource></bind></iq>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <iq xmlns="jabber:client" to="user@redacted.vhost/mobile" type="result" id="dKawV-3"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>user@redacted.vhost/mobile</jid></bind></iq>
+##
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <iq id='dKawV-5' type='set'><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></iq>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <iq xmlns="jabber:client" to="user@redacted.vhost/mobile" type="result" id="dKawV-5"/>
+##
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <enable xmlns='urn:xmpp:sm:3' resume='true'/>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <enabled xmlns='urn:xmpp:sm:3' id='fb307685-a927-4a9a-8757-1d71c23a8e70' resume='true' max='60' location='java-devel' />
+##
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <iq id='dKawV-7' type='get'><query xmlns='jabber:iq:roster'></query></iq>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51412 [AP]
+  <iq xmlns="jabber:client" to="user@redacted.vhost/mobile" type="result" id="dKawV-7"><query xmlns="jabber:iq:roster"><item name="backend" jid="backend@redacted.vhost" subscription="both"/></query></iq>
+#
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AP]
+  <presence id='dKawV-8'><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.igniterealtime.org/projects/smack' ver='NfJ3flI83zSdUDzCEICtbypursw='/></presence><presence id='dKawV-9' type='unavailable'></presence>
+  <a xmlns='urn:xmpp:sm:3' h='0'/>
+#
+T 10.122.122.1:51412 -> 10.122.122.10:5222 [AFP]
+  </stream:stream>
+########
+T 10.122.122.1:51413 -> 10.122.122.10:5222 [AP]
+  <stream:stream xmlns='jabber:client' to='redacted.vhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' from='user@redacted.vhost' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51413 [AP]
+  <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' from='redacted.vhost' id='82302b5f-099b-4e28-ba3d-c1523ae3acf1' version='1.0' xml:lang='en'>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51413 [AP]
+  <stream:features><sm xmlns="urn:xmpp:sm:3"/><auth xmlns="http://jabber.org/features/iq-auth"/><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>SCRAM-SHA-1</mechanism><mechanism>PLAIN</mechanism></mechanisms><ver xmln
+  s="urn:xmpp:features:rosterver"/><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression></stream:features>
+##
+T 10.122.122.1:51413 -> 10.122.122.10:5222 [AP]
+  <auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mechanism='SCRAM-SHA-1'>biwsbj1qZW5raW5zLHI9dTswZihHKVAndyAlX31KTEAtTnM2RDNJb30wOSNwS3w=</auth>
+#
+T 10.122.122.10:5222 -> 10.122.122.1:51413 [AP]
+  <failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><not-authorized/></failure>
+##
+T 10.122.122.1:51413 -> 10.122.122.10:5222 [AP]
+  <presence id='dKawV-12' type='unavailable'></presence>
+#
+T 10.122.122.1:51413 -> 10.122.122.10:5222 [AFP]
+  </stream:stream>
+##
+T 10.122.122.10:5222 -> 10.122.122.1:51413 [AP]
+  </stream:stream>
+##
+T 10.122.122.1:51413 -> 10.122.122.10:5222 [R]
+  ......
